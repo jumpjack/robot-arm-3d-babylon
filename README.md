@@ -84,3 +84,9 @@ Z:
 let z1 = z0 + Math.sqrt(R * R - Math.pow(x - (x0 * C - y0 * S), 2) - Math.pow(y - (x0 * S + y0 * C), 2));
 let z2 = z0 - Math.sqrt(R * R - Math.pow(x - (x0 * C - y0 * S), 2) - Ma
 ```
+
+---------------
+
+Experiments:
+
+https://playground.babylonjs.com/#D25VJD#15
