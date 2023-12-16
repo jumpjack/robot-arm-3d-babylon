@@ -60,3 +60,27 @@ Equazioni esplicite in Z:
 - X: $z = (y_0 S + z_0 C) \pm \sqrt{R^2 - (x - (x_0 C + z_0 S))^2 - (y - (y_0 C - z_0 S))^2}$
 - Y: $z = (-x_0 S + z_0 C) \pm \sqrt{R^2 - (x - (x_0 C + z_0 S))^2 - (y - (y_0 C - z_0 S))^2}$
 - Z: $z = z_0 \pm \sqrt{R^2 - (x - (x_0 C - y_0 S))^2 - (y - (x_0 S + y_0 C))^2}$
+
+-----------
+
+In formato javascript (C=cos(theta), S=sin(theta):
+
+X:
+
+```
+let z1 = (y0 * S + z0 * C) + Math.sqrt(R * R - Math.pow(x - (x0 * C + z0 * S), 2) - Math.pow(y - (y0 * C - z0 * S), 2));
+let z2 = (y0 * S + z0 * C) - Math.sqrt(R * R - Math.pow(x - (x0 * C + z0 * S), 2) - Math.pow(y - (y0 * C - z0 * S), 2));
+```
+
+Y:
+
+```
+let z1 = (-x0 * S + z0 * C) + Math.sqrt(R * R - Math.pow(x - (x0 * C + z0 * S), 2) - Math.pow(y - (y0 * C - z0 * S), 2));
+let z2 = (-x0 * S + z0 * C) - Math.sqrt(R * R - Math.pow(x - (x0 * C + z0 * S), 2) - Math.pow(y - (y0 * C - z0 * S), 2));
+```
+
+Z:
+```
+let z1 = z0 + Math.sqrt(R * R - Math.pow(x - (x0 * C - y0 * S), 2) - Math.pow(y - (x0 * S + y0 * C), 2));
+let z2 = z0 - Math.sqrt(R * R - Math.pow(x - (x0 * C - y0 * S), 2) - Ma
+```
